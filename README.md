@@ -1,1 +1,1 @@
-# grapefruitblog
+Blog for Grapefruit
