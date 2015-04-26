@@ -2,15 +2,15 @@
 layout: blog
 ---
 {% include blog/landing.html %}
-<div class="posts">
+<div class="post-items">
     {% for post in site.posts %}
-    <div class="post">
+    <div class="post-item">
         <div class="image">
           <img class="" src="{{ post.image }}"/>
         </div>
         <div class="content">
             <h3 class="title">{{ post.title }}</h3>
-            <p class="blurb">{{ post.excerpt }}</p>
+            <p class="excerpt">{{ post.excerpt | strip_html }}</p>
             <a class="continue-reading" href={{ post.url }}>CONTINUE READING ></a>
         </div>
     </div>

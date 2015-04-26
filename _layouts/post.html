@@ -1,15 +1,22 @@
 ---
 layout: blog
 ---
-<div class="post">
 
-  <header class="post-header">
-    <h1 class="post-title">{{ page.title }}</h1>
-    <p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
-  </header>
-
-  <article class="post-content">
-    {{ content }}
-  </article>
-
+<div class="page-content">
+  <div class="row container">
+    <div class="two columns"></div>
+    <div class="eight columns">
+      <div class="post">
+        <div class="image">
+          <img class="" src="{{ site.url }}/{{ page.image }}"/>
+        </div>
+        <h3 class="title">{{ page.title }}</h3>
+        <article class="content">
+          {{ content }}
+        </article>
+        <p class="twitter" >Continue the conversation on <a target="__blank" href="https://twitter.com/grapefruitcloud">Twitter</a>.</p>
+      </div>
+    </div>
+    <div class="two columns"></div>
+  </div>
 </div>
